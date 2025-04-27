@@ -112,7 +112,7 @@
                   <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Tire</a></li>
                 </ul>
               </li>
-               <li><a href="#team">Team</a></li>
+               <!-- <li><a href="#team">Team</a></li> -->
               <li><a href="#contact">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -127,10 +127,10 @@
         <div class="container">
           <div class="row gy-4">
             <div
-              class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+              class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center"
               data-aos="zoom-out"
             >
-              <h1>Welcome to <span>JITech</span></h1>
+              <h1>Welcome to <span>JITech</span><span style="font-size: x-small;">(Janya Instrumentation Technology)</span></h1>
               <p>
                 We are team of talented engineers Empowering Instrumentation
                 Excellence.
@@ -446,8 +446,7 @@
 
 
       <!-- Team Section -->
-      <section id="team" class="team section light-background">
-        <!-- Section Title -->
+      <!-- <section id="team" class="team section light-background">
         <div class="container section-title" data-aos="fade-up">
           <h2>Team</h2>
           <p>
@@ -455,7 +454,6 @@
             <span class="description-title">Team</span>
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
@@ -484,7 +482,6 @@
                 </div>
               </div>
             </div>
-            <!-- End Team Member -->
 
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
@@ -511,7 +508,6 @@
                 </div>
               </div>
             </div>
-            <!-- End Team Member -->
 
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
@@ -538,7 +534,6 @@
                 </div>
               </div>
             </div>
-            <!-- End Team Member -->
 
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
@@ -565,11 +560,9 @@
                 </div>
               </div>
             </div>
-            <!-- End Team Member -->
           </div>
         </div>
-      </section>
-      <!-- /Team Section -->
+      </section> -->
 
    
 
@@ -625,7 +618,7 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email Us</h3>
-                    <p>info@jitech.in</p>
+                    <p><a href="mailto:info@jitech.in"><span style="font-size: small;">info@jitech.in</span></a></p>
                   </div>
                 </div>
                 <!-- End Info Item -->
@@ -641,18 +634,15 @@
               </div>
             </div>
 
-            <div class="col-lg-7">
+            <div class="col-lg-7" id="contact">
               <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
+              id="contactForm"
               >
                 <div class="row gy-4">
                   <div class="col-md-6">
                     <label for="name-field" class="pb-2">Your Name</label>
                     <input
+                      id="name"
                       type="text"
                       name="name"
                       id="name-field"
@@ -664,6 +654,7 @@
                   <div class="col-md-6">
                     <label for="email-field" class="pb-2">Your Email</label>
                     <input
+                      id="email" 
                       type="email"
                       class="form-control"
                       name="email"
@@ -675,6 +666,7 @@
                   <div class="col-md-12">
                     <label for="subject-field" class="pb-2">Subject</label>
                     <input
+                      id="subject"
                       type="text"
                       class="form-control"
                       name="subject"
@@ -686,6 +678,7 @@
                   <div class="col-md-12">
                     <label for="message-field" class="pb-2">Message</label>
                     <textarea
+                      id="message"
                       class="form-control"
                       name="message"
                       rows="10"
@@ -695,7 +688,7 @@
                   </div>
 
                   <div class="col-md-12 text-center">
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                   </div>
                 </div>
               </form>
@@ -707,7 +700,8 @@
       <!-- /Contact Section -->
     </main>
 
-    <footer id="footer" class="footer">
+    <section class="section light-background">
+    <footer id="footer" class="footer ">
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
@@ -723,7 +717,7 @@
               <p class="mt-3">
                 <strong>Phone:</strong> <span>+91 99025 99804 / 87923 52727</span>
               </p>
-              <p><strong>Email:</strong> <span>info@jitech.in</span></p>
+              <p><strong>Email:</strong> <a href="mailto:info@jitech.in"><span style="font-size: small;">info@jitech.in</span></a></p>
             </div>
           </div>
 
@@ -760,6 +754,7 @@
         </p>
       </div>
     </footer>
+  </section>
 
     <!-- Scroll Top -->
     <a
