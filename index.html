@@ -1,46 +1,793 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>JITech - Janya Instrumentation Technology</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Janya Instrumentation Technologies</title>
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/bd-coming-soon.css">
-</head>
+    <!-- Favicons -->
+    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<body class="min-vh-100 d-flex flex-column">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-	<header>
-		<div class="container">
-			<nav class="navbar navbar-dark bg-transparenet">
-				<a class="navbar-brand" href="#">
-					<!-- <img src="assets/images/logo.svg" alt="logo"> -->
-					<span style="font-weight:bold">Janya Instrumentation Technologies</span>
-				</a>
-				<!-- <span class="navbar-text ml-auto d-none d-sm-inline-block">xx-130-5444</span> -->
-				<span class="navbar-text d-none d-sm-inline-block">info@jitech.in</span>
-			</nav>
-		</div>
-	</header>
-	<main class="my-auto">
-		<div class="container">
-			<h1 class="page-title">We're coming soon</h1>
-			<p class="page-description">Stay tuned for something awesome
-			</p>
-			<p>Stay connected</p>
-			<nav class="footer-social-links">
-				<a href="#!" class="social-link"><i class="mdi mdi-facebook-box"></i></a>
-				<a href="#!" class="social-link"><i class="mdi mdi-twitter"></i></a>
-				<a href="#!" class="social-link"><i class="mdi mdi-google"></i></a>
-				<a href="#!" class="social-link"><i class="mdi mdi-slack"></i></a>
-				<a href="#!" class="social-link"><i class="mdi mdi-skype"></i></a>
-			</nav>
-		</div>
-	</main>
-</body>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
+    <!-- Main CSS File -->
+    <link href="assets/css/general.css" rel="stylesheet" />
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/navbar.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />    
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/slide-panel.css" rel="stylesheet" />
+
+    <style>
+      /* Custom full width offcanvas */
+      .offcanvas-full {
+        width: 95% !important;
+        left: 0;
+        right: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.4s ease; /* Smooth transition */
+      }
+    </style>
+  </head>
+
+  <body class="index-page" id="page_body">
+    <header id="header" class="header sticky-top">
+      <div class="topbar d-flex align-items-center">
+        <div
+          class="container d-flex justify-content-center justify-content-md-between"
+        >
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"
+              ><a href="mailto:info@jitech.in">info@jitech.in</a></i
+            >
+            <i class="bi bi-phone d-flex align-items-center ms-4"
+              ><span>+91 99459 49550</span></i
+            >
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <div class="branding d-flex align-items-cente">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center text-decoration-none"
+          >
+            <!-- Logo Image -->
+            <img src="assets/img/logo.jpg" alt="" />
+
+            <!-- Text Block -->
+            <div class="d-flex flex-column ms-2">
+              <h1 class="fw-bold mb-0 fs-4">JITech</h1>
+              <small class="text-muted">Janya Instrumentation Technology</small>
+            </div>
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#slidePanel"
+                  ><span>Products</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Rubber</a></li>
+                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Plastic</a></li>
+                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Tire</a></li>
+                </ul>
+              </li>
+               <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section light-background">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+              data-aos="zoom-out"
+            >
+              <h1>Welcome to <span>JITech</span></h1>
+              <p>
+                We are team of talented engineers Empowering Instrumentation
+                Excellence.
+              </p>
+              <div class="d-flex">
+                <a href="#about" class="btn-get-started">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- Slide Panel -->
+      <div
+        class="offcanvas offcanvas-start offcanvas-full"
+        tabindex="-1"
+        id="slidePanel"
+        style="top: 90px; height: calc(100% - 56px)"
+      >
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title"></h3>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+         
+
+ <!-- Flex layout: Sidebar + Content -->
+ <div class="slide-layout">
+      
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="flex-shrink-0" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-5 fw-semibold">Products</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            Extruders
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a  href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('extruders-rubber',this)">Rubber</a></li>
+              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('extruders-plastic',this)">Plastic</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+            Roll Mill
+          </button>
+          <div class="collapse" id="dashboard-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li class="mb-2">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" style="margin-left: 30px;" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Laboratory
+                </button>
+                <div class="collapse" id="orders-collapse" style="margin-left: 40px;">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+                    <li><a href="#featured-services" onclick="selectSection('rollMill-laboratory-rubber',this)" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Rubber</a></li>
+                    <li><a href="#featured-services" onclick="selectSection('rollMill-laboratory-plastic',this)" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Plastic</a></li>
+                  </ul>
+                </div>
+                <!-- <a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-laboratory',this)">Laboratory</a></li> -->
+              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-production-rubber',this)">Production</a></li>
+              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-knives',this)">Knives For roll mill</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content-area" id="contentArea">
+    <h3>Welcome</h3>
+    <p>Select a menu item to view content here.</p>
+  </div>
+
+</div>
+        </div>
+      </div>
+
+      <!-- Page Content -->
+      <div class="container mt-5 pt-4">
+        <h1>Industries We Serve</h1>
+        <!-- <p>This content remains behind the slide panel when it opens.</p> -->
+      </div>
+
+      <!-- Featured Services Section -->
+      <section id="featured-services" class="featured-services section">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-activity icon"></i></div>
+                <h4><a href="" class="stretched-link">Plastic Industry</a></h4>
+                <p>
+                  <span
+                    >Comprehensive services and solutions for plastic
+                    manufacturing and processing instrumentation.</span
+                  >
+                  <br /><span
+                    >Our systems enable accurate measurement and monitoring of
+                    key parameters in plastic processing and production
+                    lines.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles icon"></i>
+                </div>
+                <h4><a href="" class="stretched-link">Rubber Industry</a></h4>
+                <p>
+                  Specialized support for rubber processing machines, ensuring
+                  precision and performance. <br />We deliver robust
+                  instrumentation for dynamic and static testing in rubber
+                  compounding and product development.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week icon"></i>
+                </div>
+                <h4><a href="" class="stretched-link">Tire Industry</a></h4>
+                <p>
+                  Driving innovation for modern tire manufacturing. <br />We
+                  provide advanced instrumentation solutions for precision
+                  testing and analysis in tire manufacturing and quality
+                  control.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Featured Services Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>
+            <span>Find Out More</span>
+            <span class="description-title">About Us</span>
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/about.jpg" alt="" class="img-fluid" />
+            </div>
+
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="about-content ps-0 ps-lg-3">
+                <h3>
+                  Welcome to JITech — Janya Instrumentation Technology.
+                </h3>
+                <br class="fst-italic">
+                  Based in Bangalore, India, we are a passionate team dedicated to delivering high-quality service solutions for plastic and rubber instrumentation machines. 
+                  Our mission is to help industries operate at peak efficiency through reliable, precise, and innovative instrumentation services. <br/>
+                  With a strong foundation in technical expertise and customer commitment, JITech has been supporting businesses with advanced maintenance, calibration, and optimization services. We understand the critical role that accurate instrumentation plays in manufacturing processes, and we are here to ensure your operations run smoothly and efficiently. <br/>
+                  Our approach is built on trust, transparency, and technical excellence. Whether you are a growing enterprise or an established industry leader, JITech partners with you to drive performance, reliability, and growth.
+                </p>
+                  <div class="container text-center">
+                    <h3 class="fw-bold mb-3">At JITech, we believe that precision drives progress.</h3>
+                    <p class="text-muted mb-4">
+                      With a commitment to excellence, a passion for technology, and a dedication to our customers' success, we are here to support industries in every step of their growth journey.
+                    </p>
+                    <h5 class="fw-semibold">Partner with us — and experience the difference that expertise and trust can make.</h5>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>
+            <span>Check Our</span>
+            <span class="description-title">Services</span>
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card service-item position-relative">
+                <img
+                  src="assets/img/industries/plastic_1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Plastic Industry</h5>
+                  <p class="card-text">
+                    <span
+                      >Our systems enable accurate measurement and monitoring of
+                      key parameters in plastic processing and production
+                      lines.</span
+                    >
+                  </p>
+                  <a href="#" style="margin-top: 10%;"  class="btn btn-primary">More details</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card service-item position-relative">
+                <img
+                  src="assets/img/industries/rubber.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  height="44%"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rubber Industry</h5>
+                  <p class="card-text">
+                    <span
+                      >Our systems enable accurate measurement and monitoring of
+                      key parameters in plastic processing and production
+                      lines.</span
+                    >
+                  </p>
+                  <a href="#" style="margin-top: 10%;" class="btn btn-primary">More details</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+            <div class="card service-item position-relative">
+              <img
+                src="assets/img/industries/tire.jpg"
+                class="card-img-top"
+                alt="..."
+                height="44%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tire Industry</h5>
+                <p class="card-text">
+                  <span
+                    >Our systems enable accurate measurement and monitoring of
+                    key parameters in plastic processing and production
+                    lines.</span
+                  >
+                </p>
+                <a href="#" style="margin-top: 10%;"  class="btn btn-primary">More details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+
+
+      <!-- Team Section -->
+      <section id="team" class="team section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>
+            <span>Our Hardworking</span>
+            <span class="description-title">Team</span>
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="assets/img/team/team-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>First Name</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                  src="assets/img/team/team-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>First Name</h4>
+                  <span>Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="assets/img/team/team-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>First Name</h4>
+                  <span>CTO</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="assets/img/team/team-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>First Name</h4>
+                  <span>Accountant</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+          </div>
+        </div>
+      </section>
+      <!-- /Team Section -->
+
+   
+
+      
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            <span>Need Help?</span>
+            <span class="description-title">Contact Us</span>
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+91 99459 49550</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>info@jitech.in</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 270px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="d-flex align-items-center">
+              <span class="sitename">JITech</span>
+            </a>
+            <span style="font-size: small;">Janya Instrumentation Technology</span>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3">
+                <strong>Phone:</strong> <span>+91 99459 49550</span>
+              </p>
+              <p><strong>Email:</strong> <span>info@jitech.in</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">JITech</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slide.panel.js"></script>
+  </body>
 </html>

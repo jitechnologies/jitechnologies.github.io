@@ -1,0 +1,100 @@
+[
+  {
+    "type": "extruders-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrusion-rubber.png",
+    "title": "Single-screw rubber extruders",
+    "description": "Extrusion of special rods, tubes, sheets and profiles with a range of rubber screw diameters from 30 to 150 mm. Screw lengths range from 8D to 20D, enabling flexible output from 20 kg/h to 1,500 kg/h.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/single-screw-rubber-extruders/"
+  },
+  {
+    "type": "extruders-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-filtreuse-degazeuze.png",
+    "title": "Degassing filter extruders",
+    "description": "Extrusion and filtration of high value-added materials with screw diameters ranging from 30 to 90 mm. This technology offers a throughput improvement of up to 30% compared with conventional extruders.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/degassing-filter-extruder/"
+  },
+  {
+    "type": "extruders-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/ligne_de_coextrusion-rubber.png",
+    "title": "Coextrusion line",
+    "description": "Multi-layer extrusion, profile and rod cutting with modular extruder solutions, vulcanizing equipment, conveying and die-cutting. Line capacity up to 1,500 kg/h.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/coextrusion-line/"
+  },
+  {
+    "type": "extruders-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/02/extrusion-head-1172x1536.jpeg",
+    "title": "Extrusion heads",
+    "description": "Increased material mixing (natural rubber).",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/extruders-rubber/"
+  },
+  {
+    "type": "extruders-plastic",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-thermoplastiques-768x1365.png",
+    "title": "Thermoplastic extruders",
+    "description": "Extrusion of profiles, tubes, rods, etc., with plastic screw diameters ranging from 30 to 120 mm. Screw lengths range from 10D to 35D, enabling throughputs from 20 kg/h to 800 kg/h.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/plastic-extruders/"
+  },
+  {
+    "type": "extruders-plastic",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/hpb-equipement-extrusion.jpg",
+    "title": "H.P.B Equipement",
+    "description": "In order to guarantee the follow-up of the machines built and parts supplied by HPB EQUIPEMENT, we have been given exclusive rights to own and use the company’s technical and commercial archives.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/h-p-b-machines/"
+  },
+  {
+    "type": "rollMill-laboratory-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeurs-a-cylindres-rubber-laboratoire-1412x1536.jpg",
+    "title": "Rubber roll mill",
+    "description": "Allowing the mixing of materials with additives, this equipment offers cylinder diameters ranging from 55 to 250 mm. Table dimensions range from 150 to 500 mm, with batch capacities from 0.1 kg to 8 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mills/"
+  },
+  {
+    "type": "rollMill-laboratory-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeur_nanomateriaux.png",
+    "title": "Nanomaterials Mixer",
+    "description": "Designed for automated, confined mixing of materials enriched with nanomaterials, this equipment offers cylinder diameters ranging from 110 to 400 mm. The table is available in sizes from 250 to 1,000 mm, with batch capacities ranging from 0.5 kg to 40 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/nanomaterials-mixer/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/"
+  },
+  {
+    "type": "rollMill-laboratory-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/systeme_de_melange_automatise-rubber.png",
+    "title": "Automatic mixing system",
+    "description": "Lescuyer system to automate the mixing phase on cylinder mixers Retrofittable to all brands and types of mixers Option available on all Lescuyer cylinder mixers",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/automatic-mixing-system/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/"
+  },
+  {
+    "type": "rollMill-laboratory-plastic",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/melangeur-me150-face-1536x1332.jpg",
+    "title": "PVC roll mill",
+    "description": "Allowing the mixing of materials with additives, this equipment offers cylinder diameters ranging from 55 to 250 mm. Table dimensions range from 150 to 500 mm, with batch capacities from 0.1 kg to 8 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-plastic-roll-mills/"
+  },
+  {
+    "type": "rollMill-laboratory-plastic",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/systeme_de_melange_automatise-rubber.png",
+    "title": "Automatic mixing system",
+    "description": "Lescuyer system to automate the mixing phase on cylinder mixers Retrofittable to all brands and types of mixers Option available on all Lescuyer cylinder mixers",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/automatic-mixing-system/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-plastic-roll-mills/"
+  },
+  {
+    "type": "rollMill-production-rubber",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeur-a-cylindres-production-lescuyer-villeneuve.png",
+    "title": "Rubber roll mill",
+    "description": "Designed for mixing materials with heat-sensitive additives, this equipment offers cylinder diameters from 300 to 750 mm. Table sizes range from 650 to 2,500 mm. This mixer is used for batches ranging from 15 kg to 200 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/production-roll-mill/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/production-rubber-roll-mill/"
+  },
+  {
+    "type": "rollMill-knives",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2025/03/couteaux-melangeur-a-cylindres-lescuyer-villeneuve-768x1365.jpg",
+    "title": "Our knives for roll mill",
+    "description": "Experience industrial excellence with the LESCUYER VILLENEUVE roll mill knife. Designed for professionals, this knife offers cutting-edge technology for optimum handling of rubber and plastic materials.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/"
+  }
+]
