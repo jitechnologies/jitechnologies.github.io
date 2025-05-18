@@ -382,7 +382,7 @@ function renderMenu(data) {
         // clear breadcrumb
         breadcrumb.innerHTML = `<i class='fas fa-home'></i>`;
         // clear currentPath
-        currentPath = [];
+        currentPath = []; 
         menuContainer.classList.remove("visible");
         contentArea.classList.remove("shifted");
       });
