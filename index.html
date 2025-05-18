@@ -8,7 +8,7 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/img/logo-transparent.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -37,15 +40,14 @@
     <link href="assets/css/footer.css" rel="stylesheet" />    
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/slide-panel.css" rel="stylesheet" />
+    <link href="assets/css/side-bar.css" rel="stylesheet" />
 
     <style>
       /* Custom full width offcanvas */
       .offcanvas-full {
-        width: 95% !important;
+        width: 100% !important;
         left: 0;
         right: 0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
         overflow: hidden;
         transition: transform 0.4s ease; /* Smooth transition */
       }
@@ -58,7 +60,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-E9SVEE4NML');
 </script>
 
@@ -108,22 +109,9 @@
             <ul>
               <li><a href="#hero" class="active">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li class="dropdown">
-                <a
-                  href="#"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#slidePanel"
-                  ><span>Products</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Rubber</a></li>
-                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Plastic</a></li>
-                  <li><a data-bs-toggle="offcanvas" data-bs-target="#slidePanel" href="#">Tire</a></li>
-                </ul>
-              </li>
+              <li><a href="#"  id="toggle-menu">Products</a></li>
                <!-- <li><a href="#team">Team</a></li> -->
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact" >Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -131,17 +119,26 @@
       </div>
     </header>
 
+    
+
     <main class="main">
+      </div>
+      <!-- <div id="menu-container"></div> -->
+
+      <div id="menu-container">
+        <div id="menu-panel" class="menu-panel"></div>
+      </div>
+
       <!-- Hero Section -->
-      <section id="hero" class="hero section light-background">
+      <section id="hero" class="hero section light-background bg-fit">
         <div class="container">
           <div class="row gy-4">
             <div
               class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center"
               data-aos="zoom-out"
             >
-              <h1>Welcome to <span>JITech</span><span style="font-size: x-small;">(Janya Instrumentation Technology)</span></h1>
-              <p>
+              <h1 style="color: #fff !important;">Welcome to <span>JITech</span><span style="font-size: x-small;color: #fff !important;">(Janya Instrumentation Technology)</span></h1>
+              <p style="color: #fff;">
                 We are team of talented engineers Empowering Instrumentation
                 Excellence.
               </p>
@@ -154,83 +151,16 @@
       </section>
       <!-- /Hero Section -->
 
-      <!-- Slide Panel -->
-      <div
-        class="offcanvas offcanvas-start offcanvas-full"
-        tabindex="-1"
-        id="slidePanel"
-        style="top: 90px; height: calc(100% - 56px)"
-      >
-        <div class="offcanvas-header">
-          <h3 class="offcanvas-title"></h3>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-         
 
- <!-- Flex layout: Sidebar + Content -->
- <div class="slide-layout">
-      
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <div class="flex-shrink-0" style="width: 280px;">
-      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-        <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-5 fw-semibold">Products</span>
-      </a>
-      <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-            Extruders
-          </button>
-          <div class="collapse show" id="home-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a  href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('extruders-rubber',this)">Rubber</a></li>
-              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('extruders-plastic',this)">Plastic</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-            Roll Mill
-          </button>
-          <div class="collapse" id="dashboard-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li class="mb-2">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" style="margin-left: 30px;" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  Laboratory
-                </button>
-                <div class="collapse" id="orders-collapse" style="margin-left: 40px;">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
-                    <li><a href="#featured-services" onclick="selectSection('rollMill-laboratory-rubber',this)" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Rubber</a></li>
-                    <li><a href="#featured-services" onclick="selectSection('rollMill-laboratory-plastic',this)" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Plastic</a></li>
-                  </ul>
-                </div>
-                <!-- <a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-laboratory',this)">Laboratory</a></li> -->
-              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-production-rubber',this)">Production</a></li>
-              <li><a href="#featured-services" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="selectSection('rollMill-knives',this)">Knives For roll mill</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Content Area -->
-  <div class="content-area" id="contentArea">
-    <h3>Welcome</h3>
-    <p>Select a menu item to view content here.</p>
-  </div>
-
-</div>
-        </div>
+      <div id="card-panel" style="display: none;">
+        <button id="close-card-panel">✖</button>
+        <div id="cards-container"></div>
       </div>
 
       <!-- Page Content -->
+
+      <div id="content-area"></div>
+      
       <div class="container mt-5 pt-4">
         <h1>Industries We Serve</h1>
         <!-- <p>This content remains behind the slide panel when it opens.</p> -->
@@ -790,5 +720,6 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slide.panel.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>

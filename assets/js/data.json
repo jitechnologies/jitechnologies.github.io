@@ -42,6 +42,13 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/h-p-b-machines/"
   },
   {
+    "type": "extruders-silicon",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-silicone.png",
+    "title": "Single-screw silicone extruders",
+    "description": "Profile extrusion and sheathing for medical and aerospace applications. Silicone screw diameters from 30 to 120 mm with screw lengths from 8D to 15D. Throughput capacities ranging from 20 kg/h to 800 kg/h.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/single-screw-silicone-extruder/"
+  },
+  {
     "type": "rollMill-laboratory-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeurs-a-cylindres-rubber-laboratoire-1412x1536.jpg",
     "title": "Rubber roll mill",
@@ -96,5 +103,37 @@
     "description": "Experience industrial excellence with the LESCUYER VILLENEUVE roll mill knife. Designed for professionals, this knife offers cutting-edge technology for optimum handling of rubber and plastic materials.",
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/",
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/"
+  },
+  {
+    "type": "internalMixer-intermeshing",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/internal-mixer-rotors-engrenants-1536x1024.jpeg",
+    "title": "Internal mixer with intermeshing rotors",
+    "description": "This mixer enables efficient dispersion of additives in a batch of product, with tank capacities ranging from 0.5 to 50 liters. Equipped with intermeshing rotors, it is suitable for batches ranging from 0.4 to 45 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/"
+  },
+  {
+    "type": "internalMixer-intermeshing",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/10/melangeur-interne-double-cuve-2.png",
+    "title": "Modular internal laboratory mixer",
+    "description": "This mixer offers the possibility of dispersing additives in two modular systems, allowing the rotor or tank volume to be varied. It comprises two tanks with identical or different useful volumes, ranging from 0.5 to 5 liters. This mixer is suitable for batches ranging from 2 x 0.4 kg to 2 x 4.5 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/modular-laboratory-internal-mixers/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/modular-laboratory-internal-mixers/"
+  },
+  {
+    "type": "internalMixer-tangential",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/rotors-mi-tangenciel-1536x860.jpg",
+    "title": "Internal mixer with tangential rotors",
+    "description": "This mixer enables efficient dispersion of additives in a batch of product, with tank capacities ranging from 0.5 to 50 liters. Equipped with tangential rotors, it is suitable for batches ranging from 0.4 to 45 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/"
+  },
+  {
+    "type": "internalMixer-tangential",
+    "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/10/melangeur-interne-double-cuve-2.png",
+    "title": "Modular internal laboratory mixer",
+    "description": "This mixer offers the possibility of dispersing additives in two modular systems, allowing the rotor or tank volume to be varied. It comprises two tanks with identical or different useful volumes, ranging from 0.5 to 5 liters. This mixer is suitable for batches ranging from 2 x 0.4 kg to 2 x 4.5 kg.",
+    "product_web_link": "https://www.lescuyer-villeneuve.com/en/modular-laboratory-internal-mixers/",
+    "parent_category_link": "https://www.lescuyer-villeneuve.com/en/modular-laboratory-internal-mixers/"
   }
 ]
