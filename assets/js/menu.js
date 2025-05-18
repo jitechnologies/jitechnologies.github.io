@@ -260,6 +260,7 @@ const toggleBtn = document.getElementById("toggle-menu");
 const contentArea = document.getElementById("content-area");
 const cardsDiv = document.getElementById("featured-services");
 const menuPanel = document.getElementById("menu-panel");
+const heroPanel = document.getElementById("hero-panel");
 
 let currentPath = [];
 const menusStack = [];
@@ -378,12 +379,14 @@ function renderMenu(data) {
         console.log("path", path);
         updateURLForTracking(path);
         renderCards(item.cards || [], item.label);
+
         let breadcrumb = document.getElementById("breadcrumb");
         // clear breadcrumb
         breadcrumb.innerHTML = `<i class='fas fa-home'></i>`;
         // clear currentPath
-        currentPath = []; 
+        currentPath = [];
         menuContainer.classList.remove("visible");
+        heroPanel.classList.remove("visible");
         contentArea.classList.remove("shifted");
       });
     }
