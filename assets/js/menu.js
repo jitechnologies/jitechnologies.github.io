@@ -285,6 +285,7 @@ toggleBtn.addEventListener("click", () => {
   if (menuContainer.classList.contains("visible")) {
     if (menusStack.length === 0) {
       //   renderMenuLevel(menuData, 0);
+      heroPanel.style.display = "display";
       renderMenu(menuData);
     }
   }
@@ -386,7 +387,7 @@ function renderMenu(data) {
         // clear currentPath
         currentPath = [];
         menuContainer.classList.remove("visible");
-        heroPanel.classList.remove("visible");
+        heroPanel.style.display = "none";
         contentArea.classList.remove("shifted");
       });
     }

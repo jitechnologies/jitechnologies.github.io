@@ -26,5 +26,5 @@ h6 {
 }
 
 .hero-panel {
-  visibility: visible;
+  display: block;
 }

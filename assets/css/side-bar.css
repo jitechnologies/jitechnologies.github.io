@@ -10,7 +10,7 @@
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(-260px);
+  transform: translateX(-301px);
   width: auto;
   z-index: 1050;
 }
@@ -18,7 +18,7 @@
   transform: translateX(0);
 }
 .menu-panel {
-  width: 260px;
+  width: 300px;
   border-right: 1px solid #eee;
   padding-top: 8px;
   box-sizing: border-box;
