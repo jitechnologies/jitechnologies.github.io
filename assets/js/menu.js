@@ -19,19 +19,19 @@ const menuData = [
                 label: "Rubber",
                 icon: "✅",
                 fullPath: "process/rubber/extruders/extruders-rubber",
-                link: "#/extruders-rubber"
+                link: "https://www.lescuyer-villeneuve.com/en/extruders-rubber/"
               },
               {
                 label: "Silicon",
                 icon: "✅",
                 fullPath: "process/rubber/extruders/extruders-silicon",
-                link: "#/extruders-silicon"
+                link: "https://www.lescuyer-villeneuve.com/en/silicone-extruders/"
               },
               {
                 label: "Plastic",
                 icon: "✅",
                 fullPath: "process/rubber/extruders/extruders-plastic",
-                link: "#/extruders-plastic"
+                link: "https://www.lescuyer-villeneuve.com/en/plastic-extruders/"
               }
             ]
           },
