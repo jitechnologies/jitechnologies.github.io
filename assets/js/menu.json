@@ -1,0 +1,67 @@
+[
+  {
+    "label": "Process",
+    "icon": "🔧",
+    "children": [
+      {
+        "label": "Rubber",
+        "icon": "🧪",
+        "children": [
+          {
+            "label": "Extruders",
+            "icon": "🛠",
+            "cards": [
+              {
+                "title": "Extruder A",
+                "description": "High performance extruder."
+              },
+              {
+                "title": "Extruder B",
+                "description": "Energy efficient extruder model."
+              }
+            ]
+          },
+          {
+            "label": "Roll Miller",
+            "icon": "🌀",
+            "children": [
+              {
+                "label": "Testing1",
+                "icon": "✅",
+                "cards": [
+                  {
+                    "title": "Test 1",
+                    "description": "Test details for Testing1."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Silicon",
+        "icon": "🔬",
+        "cards": [
+          {
+            "title": "Silicon Type A",
+            "description": "Used for microchips."
+          },
+          { "title": "Silicon Type B", "description": "High purity silicon." }
+        ]
+      },
+      { "label": "Tire", "icon": "🚗" },
+      { "label": "Plastic", "icon": "🧴" }
+    ]
+  },
+  {
+    "label": "Testing",
+    "icon": "🧭",
+    "cards": [
+      {
+        "title": "Testing Services",
+        "description": "Quality assurance testing."
+      }
+    ]
+  }
+]

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Side Menu + Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        touch-action: pan-y;
+      }
+      .toolbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #106eea;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        height: 64px;
+        z-index: 1100;
+      }
+      .toolbar button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      #menu-container {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        height: calc(100vh - 64px);
+        width: 260px;
+        overflow-y: auto;
+        background: white;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transform: translateX(-260px);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1050;
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #menu-container.visible {
+        transform: translateX(0);
+      }
+      .menu-panel {
+        padding-top: 8px;
+      }
+      .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        border-radius: 8px;
+        margin: 4px 12px;
+        transition: background-color 0.2s ease-in-out;
+        font-size: 1rem;
+      }
+      .menu-item:hover {
+        background-color: #f0f4ff;
+      }
+      .menu-item.active {
+        background-color: #106eea;
+        color: white;
+      }
+      .icon {
+        margin-right: 0.75rem;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+      .arrow {
+        font-size: 1rem;
+        color: #999;
+      }
+      #content-area {
+        margin-left: 0;
+        margin-top: 64px;
+        padding: 1rem;
+        flex-grow: 1;
+        overflow-y: auto;
+        background: #f9f9f9;
+        transition: margin-left 0.3s ease-in-out;
+      }
+      #content-area.shifted {
+        margin-left: 260px;
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: white;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+      }
+      .card h5 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        color: #106eea;
+      }
+      .card p {
+        margin: 0;
+        color: #444;
+      }
+      .breadcrumb {
+        font-size: 0.75rem;
+        color: #666;
+        margin: 0.5rem 1rem;
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+      }
+      .breadcrumb i {
+        color: #106eea;
+      }
+      .breadcrumb span {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <button id="toggle-menu"><i class="fas fa-bars"></i></button>
+      <span class="fw-semibold">Menu Dashboard</span>
+    </div>
+
+    <div id="menu-container"></div>
+
+    <div id="content-area">
+      <h3>Welcome! Select a menu item to see details here.</h3>
+    </div>
+
+    <script>
+      const menuData = [
+        {
+          label: "Process",
+          icon: "<i class='fas fa-cogs'></i>",
+          children: [
+            {
+              label: "Rubber",
+              icon: "<i class='fas fa-flask'></i>",
+              children: [
+                {
+                  label: "Extruders",
+                  icon: "<i class='fas fa-tools'></i>",
+                  cards: [
+                    {
+                      title: "Extruder A",
+                      description: "High performance extruder."
+                    },
+                    {
+                      title: "Extruder B",
+                      description: "Energy efficient extruder model."
+                    }
+                  ]
+                }
+              ]
+            },
+            { label: "Plastic", icon: "<i class='fas fa-bottle-water'></i>" }
+          ]
+        }
+      ];
+
+      const menuContainer = document.getElementById("menu-container");
+      const toggleBtn = document.getElementById("toggle-menu");
+      const contentArea = document.getElementById("content-area");
+
+      let currentPath = [];
+
+      toggleBtn.addEventListener("click", () =>
+        toggleMenu(!menuContainer.classList.contains("visible"))
+      );
+
+      document.body.addEventListener("click", (e) => {
+        if (
+          !menuContainer.contains(e.target) &&
+          !toggleBtn.contains(e.target)
+        ) {
+          toggleMenu(false);
+        }
+      });
+
+      function toggleMenu(show) {
+        if (show) {
+          menuContainer.classList.add("visible");
+          contentArea.classList.add("shifted");
+          renderMenu(menuData);
+        } else {
+          menuContainer.classList.remove("visible");
+          contentArea.classList.remove("shifted");
+        }
+      }
+
+      function renderMenu(data) {
+        menuContainer.innerHTML = "<div class='menu-panel'></div>";
+        const panel = menuContainer.querySelector(".menu-panel");
+
+        if (currentPath.length > 0) {
+          const backBtn = document.createElement("div");
+          backBtn.className = "menu-item";
+          backBtn.innerHTML = `<span class="icon"><i class='fas fa-arrow-left'></i></span><span>Back</span>`;
+          backBtn.addEventListener("click", () => {
+            currentPath.pop();
+            renderMenu(getCurrentMenuData());
+          });
+          panel.appendChild(backBtn);
+
+          const breadcrumb = document.createElement("div");
+          breadcrumb.className = "breadcrumb";
+          breadcrumb.innerHTML = `<i class='fas fa-home'></i>`;
+          currentPath.forEach((item, idx) => {
+            breadcrumb.innerHTML += `<span onclick="navigateToLevel(${idx})"> / ${item.label}</span>`;
+          });
+          panel.appendChild(breadcrumb);
+        }
+
+        data.forEach((item) => {
+          const itemDiv = document.createElement("div");
+          itemDiv.className = "menu-item";
+
+          const leftSpan = document.createElement("span");
+          leftSpan.style.display = "flex";
+          leftSpan.style.alignItems = "center";
+
+          const iconSpan = document.createElement("span");
+          iconSpan.className = "icon";
+          iconSpan.innerHTML = item.icon || "<i class='fas fa-folder'></i>";
+
+          const labelSpan = document.createElement("span");
+          labelSpan.textContent = item.label;
+
+          leftSpan.appendChild(iconSpan);
+          leftSpan.appendChild(labelSpan);
+          itemDiv.appendChild(leftSpan);
+
+          if (item.children) {
+            const arrowSpan = document.createElement("span");
+            arrowSpan.className = "arrow";
+            arrowSpan.innerHTML = "<i class='fas fa-chevron-right'></i>";
+            itemDiv.appendChild(arrowSpan);
+
+            itemDiv.addEventListener("click", () => {
+              currentPath.push(item);
+              renderMenu(item.children);
+            });
+          } else {
+            itemDiv.addEventListener("click", () => {
+              renderCards(item.cards || [], item.label);
+              toggleMenu(false);
+            });
+          }
+
+          panel.appendChild(itemDiv);
+        });
+      }
+
+      function getCurrentMenuData() {
+        let data = menuData;
+        currentPath.forEach((level) => {
+          const next = data.find((item) => item.label === level.label);
+          data = next.children || [];
+        });
+        return data;
+      }
+
+      function renderCards(cards, title) {
+        contentArea.innerHTML = `<h4>${title}</h4><div class="card-container"></div>`;
+        const container = contentArea.querySelector(".card-container");
+
+        cards.forEach((card) => {
+          const cardDiv = document.createElement("div");
+          cardDiv.className = "card";
+
+          const cardTitle = document.createElement("h5");
+          cardTitle.textContent = card.title;
+
+          const cardDesc = document.createElement("p");
+          cardDesc.textContent = card.description;
+
+          cardDiv.appendChild(cardTitle);
+          cardDiv.appendChild(cardDesc);
+          container.appendChild(cardDiv);
+        });
+      }
+
+      function navigateToLevel(index) {
+        currentPath = currentPath.slice(0, index + 1);
+        renderMenu(getCurrentMenuData());
+      }
+
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      document.body.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      document.body.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipeGesture();
+      });
+
+      function handleSwipeGesture() {
+        const threshold = 50;
+        const deltaX = touchEndX - touchStartX;
+
+        if (
+          deltaX > threshold &&
+          !menuContainer.classList.contains("visible")
+        ) {
+          toggleMenu(true);
+        } else if (
+          deltaX < -threshold &&
+          menuContainer.classList.contains("visible")
+        ) {
+          toggleMenu(false);
+        }
+      }
+    </script>
+  </body>
+</html>

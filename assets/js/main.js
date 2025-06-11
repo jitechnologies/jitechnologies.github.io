@@ -153,15 +153,3 @@
   document.addEventListener("scroll", navmenuScrollspy);
 })();
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // prevent actual form submission
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  const mailtoLink = `mailto:info@jitech.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
-
-  window.location.href = mailtoLink;
-});
