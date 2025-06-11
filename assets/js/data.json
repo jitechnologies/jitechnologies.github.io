@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "type": "extruders-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrusion-rubber.png",
     "title": "Single-screw rubber extruders",
@@ -7,6 +8,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/single-screw-rubber-extruders/"
   },
   {
+    "id": "2",
     "type": "extruders-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-filtreuse-degazeuze.png",
     "title": "Degassing filter extruders",
@@ -14,6 +16,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/degassing-filter-extruder/"
   },
   {
+    "id": "3",
     "type": "extruders-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/ligne_de_coextrusion-rubber.png",
     "title": "Coextrusion line",
@@ -21,6 +24,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/coextrusion-line/"
   },
   {
+    "id": "4",
     "type": "extruders-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/02/extrusion-head-1172x1536.jpeg",
     "title": "Extrusion heads",
@@ -28,6 +32,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/extruders-rubber/"
   },
   {
+    "id": "5",
     "type": "extruders-plastic",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-thermoplastiques-768x1365.png",
     "title": "Thermoplastic extruders",
@@ -35,6 +40,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/plastic-extruders/"
   },
   {
+    "id": "6",
     "type": "extruders-plastic",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/hpb-equipement-extrusion.jpg",
     "title": "H.P.B Equipement",
@@ -42,6 +48,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/h-p-b-machines/"
   },
   {
+    "id": "7",
     "type": "extruders-silicon",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/extrudeuse-silicone.png",
     "title": "Single-screw silicone extruders",
@@ -49,6 +56,7 @@
     "product_web_link": "https://www.lescuyer-villeneuve.com/en/single-screw-silicone-extruder/"
   },
   {
+    "id": "8",
     "type": "rollMill-laboratory-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeurs-a-cylindres-rubber-laboratoire-1412x1536.jpg",
     "title": "Rubber roll mill",
@@ -57,6 +65,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mills/"
   },
   {
+    "id": "9",
     "type": "rollMill-laboratory-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeur_nanomateriaux.png",
     "title": "Nanomaterials Mixer",
@@ -65,6 +74,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/"
   },
   {
+    "id": "10",
     "type": "rollMill-laboratory-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/systeme_de_melange_automatise-rubber.png",
     "title": "Automatic mixing system",
@@ -73,6 +83,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mill/"
   },
   {
+    "id": "11",
     "type": "rollMill-laboratory-plastic",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/12/melangeur-me150-face-1536x1332.jpg",
     "title": "PVC roll mill",
@@ -81,6 +92,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-plastic-roll-mills/"
   },
   {
+    "id": "12",
     "type": "rollMill-laboratory-plastic",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/systeme_de_melange_automatise-rubber.png",
     "title": "Automatic mixing system",
@@ -89,6 +101,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-plastic-roll-mills/"
   },
   {
+    "id": "13",
     "type": "rollMill-production-rubber",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/melangeur-a-cylindres-production-lescuyer-villeneuve.png",
     "title": "Rubber roll mill",
@@ -97,6 +110,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/production-rubber-roll-mill/"
   },
   {
+    "id": "14",
     "type": "rollMill-knives",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2025/03/couteaux-melangeur-a-cylindres-lescuyer-villeneuve-768x1365.jpg",
     "title": "Our knives for roll mill",
@@ -105,6 +119,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/"
   },
   {
+    "id": "15",
     "type": "internalMixer-intermeshing",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/internal-mixer-rotors-engrenants-1536x1024.jpeg",
     "title": "Internal mixer with intermeshing rotors",
@@ -113,6 +128,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/"
   },
   {
+    "id": "16",
     "type": "internalMixer-intermeshing",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/10/melangeur-interne-double-cuve-2.png",
     "title": "Modular internal laboratory mixer",
@@ -121,6 +137,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/modular-laboratory-internal-mixers/"
   },
   {
+    "id": "17",
     "type": "internalMixer-tangential",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2024/01/rotors-mi-tangenciel-1536x860.jpg",
     "title": "Internal mixer with tangential rotors",
@@ -129,6 +146,7 @@
     "parent_category_link": "https://www.lescuyer-villeneuve.com/en/laboratory-internal-mixer/"
   },
   {
+    "id": "18",
     "type": "internalMixer-tangential",
     "img_url": "https://www.lescuyer-villeneuve.com/Installeur/wp-content/uploads/2023/10/melangeur-interne-double-cuve-2.png",
     "title": "Modular internal laboratory mixer",

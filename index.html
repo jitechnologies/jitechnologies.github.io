@@ -110,6 +110,14 @@
               <li><a href="#hero" class="active">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#"  id="toggle-menu">Products</a></li>
+              <li class="dropdown"><a href="#"><span>Principles</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a target="_blank" href="https://www.lescuyer-villeneuve.com/en/home-lescuyer-villeneuve/">Lescuyer & Villeneuve</a></li>
+                <li><a target="_blank" href="https://www.mdc-engineering.net/en/mdc-salt-bath/">MDC Engineering,France</a></li>
+                <li><a target="_blank" href="https://www.tauzin-auto.fr/en/tauzin-cutting-equipment/">TAUZIN,France</a></li>
+                <li><a target="_blank" href="https://www.labtron.com/">Labtron</a></li>
+              </ul>
+            </li>
               <li><a href="#contact" >Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -133,10 +141,26 @@
       <!-- /Hero Section -->
 
 
-      <div id="card-panel" style="display: none;">
-        <button id="close-card-panel">✖</button>
-        <div id="cards-container"></div>
+      <!-- Cards -->
+<div id="cards-container" style="display: none;">
+  <!-- More cards -->
+</div>
+
+<!-- Bootstrap Modal -->
+   <div id="datails-panel" data-include="details-modal.html" ></div>
+<div class="modal  fade" id="myModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+      <div class="modal-body" id="modalBody">
+        <div id="cards-container"></div> 
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- Page Content -->
 

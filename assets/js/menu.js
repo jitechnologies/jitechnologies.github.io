@@ -13,62 +13,47 @@ const menuData = [
             label: "Extruders",
             fullPath: "process/rubber/extruders",
             icon: "🛠",
-            link: "#",
+            link: "",
             children: [
               {
                 label: "Rubber",
                 icon: "✅",
-                fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                fullPath: "process/rubber/extruders/extruders-rubber",
+                link: "#/extruders-rubber"
               },
               {
                 label: "Silicon",
                 icon: "✅",
-                fullPath:
-                  "process/rubber/vulcanization/treatment-of-vulcanising-fumes",
-                link: "https://www.mdc-engineering.net/en/treatment-of-vulcanising-fumes/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                fullPath: "process/rubber/extruders/extruders-silicon",
+                link: "#/extruders-silicon"
               },
               {
                 label: "Plastic",
                 icon: "✅",
-                fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                fullPath: "process/rubber/extruders/extruders-plastic",
+                link: "#/extruders-plastic"
               }
             ]
           },
           {
-            label: "Roll Miller",
+            label: "Roll Mill",
             icon: "🌀",
             fullPath: "process/rubber/rollMiller",
             children: [
               {
-                label: "Testing1",
-                link: "#",
-                icon: "✅",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                label: "Laboratory",
+                link: "https://www.lescuyer-villeneuve.com/en/laboratory-roll-mills/",
+                icon: "✅"
+              },
+              {
+                label: "Production",
+                link: "https://www.lescuyer-villeneuve.com/en/production-roll-mill-rubber-silicone/",
+                icon: "✅"
+              },
+              {
+                label: "Knives for roll mill",
+                link: "https://www.lescuyer-villeneuve.com/en/roll-mill-knives/",
+                icon: "✅"
               }
             ]
           },
@@ -76,46 +61,27 @@ const menuData = [
             label: "Laboratory",
             icon: "✅",
             fullPath: "process/rubber/laboratory",
-            link: "#",
+            link: "",
             children: [
               {
                 label: "Intermeshing",
                 icon: "✅",
                 fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/",
-                cards: [
-                  {
-                    title: "Internal mixer with intermeshing rotors",
-                    description:
-                      "This mixer enables efficient dispersion of additives in a batch of product, with tank capacities ranging from 0.5 to 50 liters. Equipped with intermeshing rotors, it is suitable for batches ranging from 0.4 to 45 kg."
-                  }
-                ]
+                link: ""
               },
               {
                 label: "Tangential",
                 icon: "✅",
                 fullPath:
                   "process/rubber/vulcanization/treatment-of-vulcanising-fumes",
-                link: "https://www.mdc-engineering.net/en/treatment-of-vulcanising-fumes/",
-                cards: [
-                  {
-                    title: "Internal mixer with tangential rotors",
-                    description:
-                      "This mixer enables efficient dispersion of additives in a batch of product, with tank capacities ranging from 0.5 to 50 liters. Equipped with tangential rotors, it is suitable for batches ranging from 0.4 to 45 kg."
-                  }
-                ]
+                link: "",
+                ids: ["17"]
               },
               {
                 label: "Plastic",
                 icon: "✅",
                 fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                link: ""
               }
             ]
           },
@@ -123,44 +89,26 @@ const menuData = [
             label: "Internal Mixers",
             icon: "✅",
             fullPath: "process/rubber/internalMixers",
-            link: "#",
-            cards: [
-              {
-                title: "Internal Mixers",
-                description: "Test details for Testing2."
-              }
-            ]
+            link: ""
           },
           {
             label: "Vulcanization",
             icon: "✅",
             fullPath: "process/rubber/vulcanization",
-            link: "#",
+            link: "",
             children: [
               {
                 label: "LCM salt bath line",
                 icon: "✅",
                 fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                link: "https://www.mdc-engineering.net/en/lcm-salt-bath-line/"
               },
               {
                 label: "Treatment of vulcanising fumes",
                 icon: "✅",
                 fullPath:
                   "process/rubber/vulcanization/treatment-of-vulcanising-fumes",
-                link: "https://www.mdc-engineering.net/en/treatment-of-vulcanising-fumes/",
-                cards: [
-                  {
-                    title: "Test 1",
-                    description: "Test details for Testing1."
-                  }
-                ]
+                link: "https://www.mdc-engineering.net/en/treatment-of-vulcanising-fumes/"
               }
             ]
           },
@@ -199,14 +147,7 @@ const menuData = [
       {
         label: "Silicon",
         icon: "🔬",
-        fullPath: "process/silicon",
-        cards: [
-          {
-            title: "Silicon Type A",
-            description: "Used for microchips."
-          },
-          { title: "Silicon Type B", description: "High purity silicon." }
-        ]
+        fullPath: "process/silicon"
       },
       { label: "Tire", icon: "🚗", fullPath: "process/tire" },
       {
@@ -234,10 +175,106 @@ const menuData = [
     label: "Testing",
     icon: "🧭",
     fullPath: "testing",
-    cards: [
+    children: [
       {
-        title: "Testing Services",
-        description: "Quality assurance testing."
+        label: "Plastic Application",
+        icon: "🧴",
+        fullPath: "testing/plastic",
+        children: [
+          {
+            label: "Pendulum Impact Tester",
+            icon: "✅",
+            fullPath: "testing/plastic/pendulum-impact-tester",
+            link: ""
+          },
+          {
+            label: "Falling Weight Impact Tester",
+            icon: "✅",
+            fullPath: "testing/plastic/falling-weight-impact-tester",
+            link: ""
+          },
+          {
+            label: "Melt Flow Index Tester",
+            icon: "✅",
+            fullPath: "testing/plastic/melt-flow-index-tester",
+            link: ""
+          },
+          {
+            label: "Laboratory Incubator",
+            icon: "✅",
+            fullPath: "testing/plastic/laboratory-incubator",
+            link: ""
+          },
+          {
+            label: "Laboratory Mixer",
+            icon: "✅",
+            fullPath: "testing/plastic/laboratory-mixer",
+            link: ""
+          }
+        ]
+      },
+      {
+        label: "Rubber Application",
+        icon: "🧴",
+        fullPath: "testing/rubber"
+      },
+      {
+        label: "Pharmaceutical Application",
+        icon: "🧴",
+        fullPath: "testing/pharmaceutical",
+        children: [
+          {
+            label: "Atomic Obsorption Spectrometer",
+            icon: "✅",
+            fullPath: "testing/plastic/atomic-obsorption-spectrometer",
+            link: ""
+          },
+          {
+            label: "Color Allemet Cabinet",
+            icon: "✅",
+            fullPath: "testing/plastic/color-allemet-cabinet",
+            link: ""
+          },
+          {
+            label: "Flame Photometer",
+            icon: "✅",
+            fullPath: "testing/plastic/flame-photometer",
+            link: ""
+          },
+          {
+            label: "Gas Chromatograph",
+            icon: "✅",
+            fullPath: "testing/plastic/gas-chromatograph",
+            link: ""
+          },
+          {
+            label: "Polarimeter",
+            icon: "✅",
+            fullPath: "testing/plastic/polarimeter",
+            link: ""
+          },
+          {
+            label: "Spectrophotometer",
+            icon: "✅",
+            fullPath: "testing/plastic/spectrophotometer",
+            link: ""
+          }
+        ]
+      },
+      {
+        label: "Electronic Application",
+        icon: "🧴",
+        fullPath: "testing/electronic"
+      },
+      {
+        label: "Aerospace application",
+        icon: "🧴",
+        fullPath: "testing/aerospace"
+      },
+      {
+        label: "Composite Application",
+        icon: "🧴",
+        fullPath: "testing/composite"
       }
     ]
   }
@@ -264,6 +301,8 @@ const heroPanel = document.getElementById("hero-panel");
 
 let currentPath = [];
 const menusStack = [];
+// Track the current menuKey (set on click)
+let selectedMenuKeyItem = null;
 
 document.addEventListener("click", (event) => {
   const isClickInsideMenu = event.target.closest("#menu-container") !== null;
@@ -348,8 +387,14 @@ function renderMenu(data) {
       anchor.target = "_blank"; // open in new tab
       anchor.rel = "noopener noreferrer";
     } else {
+      anchor.addEventListener("click", function () {
+        // createModalIfNeeded();
+      });
       anchor.href = "#";
       anchor.textContent = item.label;
+      // Set Bootstrap modal attributes
+      // anchor.setAttribute("data-bs-toggle", "modal");
+      // anchor.setAttribute("data-bs-target", "#myModal");
     }
 
     // leftSpan.appendChild(iconSpan);
@@ -379,7 +424,8 @@ function renderMenu(data) {
           item.fullPath || item.label.toLowerCase().replace(/\s+/g, "-");
         console.log("path", path);
         updateURLForTracking(path);
-        renderCards(item.cards || [], item.label);
+        selectedMenuKeyItem = item.cards;
+        // renderCards(item.cards || [], item.label);
 
         let breadcrumb = document.getElementById("breadcrumb");
         // clear breadcrumb
@@ -413,7 +459,6 @@ function renderCards(cards) {
   console.log("renderCards");
   const cardsContainer = document.getElementById("cards-container");
   cardsContainer.innerHTML = ""; // Clear existing
-
   contentArea.innerHTML = `<div class="card-container"></div>`;
   const container = contentArea.querySelector(".card-container");
 
@@ -437,15 +482,16 @@ function clearContentArea() {
   contentArea.innerHTML = "";
 }
 
-/**  render card */
-// let selectedSection = "";
-
-// // Method to select section
-// function selectSection(section) {
-//   selectedSection = section;
-//   //   setActiveMenu(el);
-//   renderContent();
-// }
+// --- details modal ---
+function createModalIfNeeded() {
+  // Now attach the event
+  const modal = document.getElementById("myModal");
+  modal.addEventListener("shown.bs.modal", function () {
+    console.log(window.location.href);
+    const modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = `<p>"${JSON.stringify(window.location.href)}"</p>`; // You can dynamically inject cards
+  });
+}
 
 function renderContent() {
   console.log("renderContent");
