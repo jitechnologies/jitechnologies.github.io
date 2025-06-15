@@ -297,7 +297,7 @@ const toggleBtn = document.getElementById("toggle-menu");
 const contentArea = document.getElementById("content-area");
 const cardsDiv = document.getElementById("featured-services");
 const menuPanel = document.getElementById("menu-panel");
-const heroPanel = document.getElementById("hero-panel");
+// const heroPanel = document.getElementById("hero-panel");
 
 let currentPath = [];
 const menusStack = [];
@@ -324,7 +324,7 @@ toggleBtn.addEventListener("click", () => {
   if (menuContainer.classList.contains("visible")) {
     if (menusStack.length === 0) {
       //   renderMenuLevel(menuData, 0);
-      heroPanel.style.display = "display";
+      // heroPanel.style.display = "display";
       renderMenu(menuData);
     }
   }
@@ -433,7 +433,7 @@ function renderMenu(data) {
         // clear currentPath
         currentPath = [];
         menuContainer.classList.remove("visible");
-        heroPanel.style.display = "none";
+        // heroPanel.style.display = "none";
         contentArea.classList.remove("shifted");
       });
     }
