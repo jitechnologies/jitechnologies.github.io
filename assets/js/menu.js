@@ -297,14 +297,26 @@ document.addEventListener("click", (event) => {
   const isClickInsideMenu = event.target.closest("#menu-container") !== null;
   const isClickOnToolbar = event.target.closest("#toggle-menu") !== null;
   const isClickInsideMenuPanel = event.target.closest("#menu-panel") !== null;
+  const isClickInsideMenuItem = event.target.closest(".menu-item") !== null;
   console.log("isClickInsideMenu", isClickInsideMenu);
   console.log("isClickOnToolbar", isClickOnToolbar);
   console.log("isClickInsideMenuPanel", isClickInsideMenuPanel);
-  //   if (!isClickInsideMenu && !isClickOnToolbar && !isClickInsideMenuPanel) {
-  //     menuContainer.classList.remove("visible");
-  //     contentArea.classList.remove("shifted");
-  //     removeMenusAfterLevel(0);
-  //   }
+  console.log("isClickInsideMenuItem", isClickInsideMenuItem);
+
+  if (!isClickOnToolbar) {
+    if (menuContainer.classList.contains("visible")) {
+      if (
+        !isClickInsideMenu &&
+        !isClickInsideMenuPanel &&
+        !isClickInsideMenuItem
+      ) {
+        console.log("Click outside menu, closing it");
+        menuContainer.classList.remove("visible");
+        contentArea.classList.remove("shifted");
+        // removeMenusAfterLevel(0);
+      }
+    }
+  }
 });
 
 toggleBtn.addEventListener("click", () => {
