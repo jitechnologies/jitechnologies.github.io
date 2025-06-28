@@ -58,38 +58,27 @@ const menuData = [
             ]
           },
           {
-            label: "Laboratory",
+            label: "Laboratory Internal Mixers",
             icon: "✅",
-            fullPath: "process/rubber/laboratory",
+            fullPath: "process/rubber/laboratory-internal-mixers",
             link: "",
             children: [
               {
-                label: "Intermeshing",
-                icon: "✅",
-                fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: ""
-              },
-              {
-                label: "Tangential",
+                label: "Intermeshing Mixer",
                 icon: "✅",
                 fullPath:
-                  "process/rubber/vulcanization/treatment-of-vulcanising-fumes",
-                link: "",
-                ids: ["17"]
+                  "process/rubber/laboratory-internal-mixers/intermeshing-mixer",
+                link: "https://www.lescuyer-villeneuve.com/en/internal-mixer-gearing/"
               },
               {
-                label: "Plastic",
+                label: "Tangential Mixer",
                 icon: "✅",
-                fullPath: "process/rubber/vulcanization/lcm-salt-bath-line",
-                link: ""
+                fullPath:
+                  "process/rubber/laboratory-internal-mixers/tangential-mixer",
+                link: "https://www.lescuyer-villeneuve.com/en/internal-mixer-tangential/",
+                ids: ["17"]
               }
             ]
-          },
-          {
-            label: "Internal Mixers",
-            icon: "✅",
-            fullPath: "process/rubber/internalMixers",
-            link: ""
           },
           {
             label: "Vulcanization",
@@ -125,13 +114,13 @@ const menuData = [
             fullPath: "process/rubber/calenders"
           },
           {
-            label: "Press",
+            label: "Compression Press",
             icon: "✅",
             link: "https://www.lescuyer-villeneuve.com/en/compression-presses-electric/",
             fullPath: "process/rubber/press"
           },
           {
-            label: "Bi-Vis conical",
+            label: "Conical twin screw",
             icon: "✅",
             link: "https://www.lescuyer-villeneuve.com/en/bi-vis-conical/",
             fullPath: "process/rubber/bi-vis-conical"
@@ -165,7 +154,7 @@ const menuData = [
             label: "Laboratory Press",
             icon: "✅",
             fullPath: "process/plastic/laboratory-press",
-            link: "https://www.mdc-engineering.net/en/treatment-of-vulcanising-fumes/"
+            link: "https://www.lescuyer-villeneuve.com/en/compression-presses-electric/"
           }
         ]
       }
