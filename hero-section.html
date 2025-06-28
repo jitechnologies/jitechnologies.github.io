@@ -1,4 +1,4 @@
-<section id="hero" class="hero section light-background bg-fit">
+<!-- <section id="hero" class="hero section light-background bg-fit">
   <div class="container">
     <div class="row gy-4">
       <div
@@ -18,7 +18,411 @@
         <div class="d-flex">
           <a href="#contact" class="btn-get-started">Contact Us</a>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
-</section>
+</section> -->
+<style>
+  /* Custom styles for responsive carousel */
+  .carousel-inner .carousel-item img,
+  .carousel-inner .carousel-item video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-inner {
+    height: 100vh;
+    max-height: 480px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-inner {
+      max-height: 220px;
+    }
+  }
+</style>
+
+<div
+  id="carouselExampleIndicators"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <!-- Indicators -->
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="4"
+      aria-label="Slide 5"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="5"
+      aria-label="Slide 6"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="6"
+      aria-label="Slide 7"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="7"
+      aria-label="Slide 8"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="8"
+      aria-label="Slide 9"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="9"
+      aria-label="Slide 10"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="10"
+      aria-label="Slide 11"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="11"
+      aria-label="Slide 12"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="12"
+      aria-label="Slide 13"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="13"
+      aria-label="Slide 14"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="14"
+      aria-label="Slide 15"
+    ></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- Mobile image -->
+      <img
+        src="assets/img/mobile_view_bg.png"
+        class="d-block d-md-none w-100"
+        alt="Mobile Banner"
+      />
+
+      <!-- Desktop image -->
+      <img
+        src="assets/img/bg_with_text.png"
+        class="d-none d-md-block w-100"
+        alt="Desktop Banner"
+      />
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/img/industries/videos/plastick.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="assets/img/industries/in/in5.png"
+        class="d-block w-100"
+        alt="Industry Image"
+      />
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/img/industries/videos/tire.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/img/industries/videos/rubber.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/img/industries/videos/instrucment_operator.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/fpXoNgaLjtM.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+          onclick=""
+        ></video>
+      </div>
+      <!-- <div class="container" >
+        <div class="carousel-caption">
+          <p><a class="btn btn-link" href="#">more details</a></p>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/mTaVcyZ9dCs.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/sFOf0bQxkXw.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/8lhW1CaLIJM.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/DowXWzIdEzs.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/VqF3a_8_bVE.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/io2cQJIsmqA.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/82rG1mrEb8o.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <video
+          src="assets/videos/youtube/plrPfKOi6Wg.mp4"
+          autoplay
+          muted
+          loop
+          class="w-100"
+        ></video>
+      </div>
+    </div>
+    <!-- <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/fpXoNgaLjtM?autoplay=1&mute=1&rel=0&playlist=fpXoNgaLjtM&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/mTaVcyZ9dCs?autoplay=1&mute=1&rel=0&playlist=mTaVcyZ9dCs&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/sFOf0bQxkXw?autoplay=1&mute=1&rel=0&playlist=sFOf0bQxkXw&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/8lhW1CaLIJM?autoplay=1&mute=1&rel=0&playlist=8lhW1CaLIJM&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/DowXWzIdEzs?autoplay=1&mute=1&rel=0&playlist=DowXWzIdEzs&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/VqF3a_8_bVE?autoplay=1&mute=1&rel=0&playlist=VqF3a_8_bVE&loop=1"
+          class="video-frame"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div> -->
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- <script>
+  const youtubeIds = [
+    "fpXoNgaLjtM", // Your video
+    "dQw4w9WgXcQ", // Rick Roll (Example)
+    "ScMzIvxBSi4" // Another sample
+  ];
+
+  const carouselInner = document.getElementById("carouselInner");
+  console.log("Adding YouTube videos to carousel...");
+
+  youtubeIds.forEach((id, index) => {
+    console.log(`Adding video with ID: ${id}`);
+    const item = document.createElement("div");
+    item.className = "carousel-item" + (index === 0 ? " active" : "");
+    item.innerHTML = `
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1&rel=0&playlist=${id}&loop=1"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    `;
+    carouselInner.appendChild(item);
+  });
+</script> -->
+</div>
