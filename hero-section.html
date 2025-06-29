@@ -23,6 +23,19 @@
   </div>
 </section> -->
 <style>
+  .carousel-img-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .carousel-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
   /* Custom styles for responsive carousel */
   .carousel-inner .carousel-item img,
   .carousel-inner .carousel-item video {
@@ -145,19 +158,17 @@
   </div>
 
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item d-none d-sm-block carousel-img-container active">
+      <!-- Desktop image -->
+      <img src="assets/img/welcome_desktop_1.png" alt="Desktop Banner" />
+    </div>
+
+    <div class="carousel-item d-block d-sm-none active">
       <!-- Mobile image -->
       <img
         src="assets/img/mobile_view_bg.png"
         class="d-block d-md-none w-100"
         alt="Mobile Banner"
-      />
-
-      <!-- Desktop image -->
-      <img
-        src="assets/img/bg_with_text.png"
-        class="d-none d-md-block w-100"
-        alt="Desktop Banner"
       />
     </div>
 
@@ -223,11 +234,6 @@
           onclick=""
         ></video>
       </div>
-      <!-- <div class="container" >
-        <div class="carousel-caption">
-          <p><a class="btn btn-link" href="#">more details</a></p>
-        </div>
-      </div> -->
     </div>
 
     <div class="carousel-item">
@@ -318,69 +324,6 @@
         ></video>
       </div>
     </div>
-    <!-- <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/fpXoNgaLjtM?autoplay=1&mute=1&rel=0&playlist=fpXoNgaLjtM&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/mTaVcyZ9dCs?autoplay=1&mute=1&rel=0&playlist=mTaVcyZ9dCs&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/sFOf0bQxkXw?autoplay=1&mute=1&rel=0&playlist=sFOf0bQxkXw&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/8lhW1CaLIJM?autoplay=1&mute=1&rel=0&playlist=8lhW1CaLIJM&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/DowXWzIdEzs?autoplay=1&mute=1&rel=0&playlist=DowXWzIdEzs&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.youtube.com/embed/VqF3a_8_bVE?autoplay=1&mute=1&rel=0&playlist=VqF3a_8_bVE&loop=1"
-          class="video-frame"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div> -->
 
     <button
       class="carousel-control-prev"
